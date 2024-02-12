@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Changer Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Change the CSS Of Below Image! With the Help Of Sliders.</h1>
+        <span class="header">JavaScript</span>
+        <div class="css-controller">
+            <label for="base">Base Color</label>
+            <input type="color" name="base" id="base" value="#ff0000">
+            <!-- -------WIDTH-SECTION------- -->
+            <label for="width">width</label>
+            <input 
+            type="range" 
+            id="width" 
+            name="width" 
+            min="0" 
+            max="100" 
+            value="30" 
+            data-sizing="%"
+            >
+            <!-- --------BORDER-RADIUS SECTION------- -->
+            <label for="border-radius">Border-Radius</label>
+            <input 
+            type="range" 
+            id="border-radius" 
+            name="border-radius" 
+            min="0" 
+            max="100" 
+            value="5" 
+            data-sizing="px"
+            >
+            <!-- ----------PADDING---------- -->
+            <label for="padding">Padding</label>
+            <input 
+            type="range" 
+            id="padding" 
+            name="padding" 
+            min="10" 
+            max="200" 
+            value="0" 
+            data-sizing="px"
+            >
+            <!-- ------------BLUR----------- -->
+            <label for="blur">Blur</label>
+            <input 
+            type="range" 
+            id="blur" 
+            name="blur" 
+            min="0" 
+            max="25" 
+            value="0" 
+            data-sizing="px"
+            >
+        </div>
+        <img src="https://images.pexels.com/photos/1327107/pexels-photo-1327107.jpeg?auto=compress&cs=tinysrgb&w=600r" alt="">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
